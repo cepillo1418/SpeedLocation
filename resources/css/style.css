@@ -1,0 +1,106 @@
+@import '~datatables.net-bs5/css/dataTables.bootstrap5.css';
+@import '~datatables.net-responsive-bs5/css/responsive.bootstrap5.css';
+@import '~flatpickr/dist/flatpickr.css';
+:root{
+ --bg-primary: #11151c;
+ --bg-secondary: #19212e;
+}
+/*
+hauteur de 100% de la fenêtre du navigateur moins la taille de la navbar
+*/
+.minScreen{
+    height: calc(100vh - 60px);
+}
+.tdBtn{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+tr:hover .divBtnTab{
+    opacity: 100%;
+}
+.divBtnTab{
+    width: fit-content;
+    float: right;
+    opacity: 0;
+}
+td{
+    vertical-align: middle;
+}
+.noteSupp{
+    overflow-y: auto;
+    max-height: 100px;
+    padding-right:15px;
+}
+.v-title{
+    font-size: 1.5rem;
+}
+.editButton,.delButton{
+    margin: 0 5px;
+}
+/*.col-sm-12{*/
+/*    padding: 0 !important;*/
+/*}*/
+.imageVEdit{
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    max-height: 500px;
+    min-height: 500px;
+}
+.h-fit{
+    height: fit-content;
+}
+
+.h-100C{
+    height: calc(100vh - 60px);
+}
+.vLabel{
+    font-size: 1.8rem;
+}
+span.dtr-data{
+    word-wrap: anywhere;
+}
+body{
+    background-color: var(--bg-primary);
+    color: white;
+}
+.bg-nav{
+    background-color: var(--bg-secondary);
+}
+
+.bg-p{
+    background-color: var(--bg-primary);
+}
+.bg-s{
+    background-color: var(--bg-secondary);
+}
+.shadow-block{
+    box-shadow: 0 0 4px 1px #ffffff75;
+}
+.color-white{
+    color: white;
+}
+.tabsHome{
+    color: white !important;
+}
+.tabsHome.active{
+    color: black !important;
+}
+.tabsHome i{
+    color: white !important;
+}
+.tabsHome.active i{
+    color: black !important;
+}
+th{
+    text-align: center;
+}
+td{
+    word-wrap: anywhere;
+    text-align: center;
+}
+.w-fit{
+    width: fit-content;
+}
