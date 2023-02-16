@@ -197,6 +197,8 @@ Route::middleware(\App\Http\Middleware\AuthWeb::class)->group(function() {
     });
 });
 
+//route email 
+
 
 
 
