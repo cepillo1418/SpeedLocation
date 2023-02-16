@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ __('Gestion Flotte') }}</title>
+    <title>{{ __('SpeedLoc\'  ') }}</title>
 
     <!-- Scripts -->
     <script src="{{asset('js/fontawesome.js')}}" defer></script>
