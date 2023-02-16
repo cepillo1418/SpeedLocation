@@ -36,6 +36,7 @@ class LocationController extends Controller
     {
         $voitures =  voiture::all();
         $users = User::all();
+        
         return view('form.location.locationCreate',['voitures' => $voitures, 'users' => $users]);
     }
 

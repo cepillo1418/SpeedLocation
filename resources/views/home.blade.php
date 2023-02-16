@@ -50,7 +50,7 @@
                     {{--Affiche le tableau ou non selont le role de l'utilisateur--}}
                     @if(\Illuminate\Support\Facades\Auth::user()->hasRole(['admin','responsable auto', 'fournisseur', 'user']))
                         <div id="table_voitures" class="tab-pane fade contentHome mt-3" role="tabpanel">
-                        <table id="DataTable_voitures" class="table table-secondary table-bordered table-hover table-striped dataTable mt-2 table-responsive" style="width: 100%">
+                        <table id="DataTable_voitures" class="table table-secondary  table-hover table-striped dataTable mt-2 table-responsive" style="width: 100%">
                             <thead>
                             <tr class="text-white">
                                 <th>Marque</th>
@@ -90,7 +90,7 @@
                     @if(\Illuminate\Support\Facades\Auth::user()->hasRole(['admin','responsable auto']))
                         <div id="table_entretiens" class="tab-pane fade contentHome mt-3" role="tabpanel">
                         <!-- Button trigger modal -->
-                        <table id="DataTable_entretiens" class="table table-bordered table-secondary table-hover mt-2 table-striped dataTable dt-responsive" style="width: 100%">
+                        <table id="DataTable_entretiens" class="table  table-secondary table-hover mt-2 table-striped dataTable dt-responsive" style="width: 100%">
                             <thead>
                             <tr>
                                 <th>Nom garage</th>
@@ -123,7 +123,7 @@
                     @if(\Illuminate\Support\Facades\Auth::user()->hasRole(['admin','responsable auto']))
                         <div id="table_reparations" class="tab-pane contentHome fade mt-3" role="tabpanel">
                         <!-- Button trigger modal -->
-                        <table id="DataTable_reparations" class="table table-bordered table-hover table-secondary mt-2 table-striped dataTable dt-responsive" style="width: 100%">
+                        <table id="DataTable_reparations" class="table  table-hover table-secondary mt-2 table-striped dataTable dt-responsive" style="width: 100%">
                             <thead>
                             <tr>
                                 <th>Nom garage</th>
@@ -156,7 +156,7 @@
                     @if(\Illuminate\Support\Facades\Auth::user()->hasRole(['admin','responsable auto']))
                         <div id="table_assurances" class="tab-pane fade contentHome mt-3" role="tabpanel">
                         <!-- Button trigger modal -->
-                        <table id="DataTable_assurances" class="table table-bordered table-hover table-secondary mt-2 table-striped dataTable dt-responsive" style="width: 100%">
+                        <table id="DataTable_assurances" class="table table-hover table-secondary mt-2 table-striped dataTable dt-responsive" style="width: 100%">
                             <thead>
                             <tr>
                                 <th>Nom assurance</th>
@@ -182,7 +182,7 @@
                     @endif
                     @if(\Illuminate\Support\Facades\Auth::user()->hasRole(['admin','responsable auto']))
                         <div id="table_carburants" class="tab-pane contentHome fade mt-3" role="tabpanel">
-                        <table id="DataTable_carburants" class="table table-bordered table-hover table-secondary mt-2 table-striped dataTable dt-responsive" style="width: 100%">
+                        <table id="DataTable_carburants" class="table  table-hover table-secondary mt-2 table-striped dataTable dt-responsive" style="width: 100%">
                             <thead>
                             <tr>
                                 <th>Nombre de litre</th>
@@ -206,7 +206,7 @@
                     @endif
                     @if(\Illuminate\Support\Facades\Auth::user()->hasRole(['admin','secretaire']))
                         <div id="table_locations" class="tab-pane fade contentHome mt-3" role="tabpanel">
-                        <table id="DataTable_location" class="table table-bordered table-hover table-secondary mt-2 table-striped dataTable table-responsive" style="width: 100%">
+                        <table id="DataTable_location" class="table  table-hover table-secondary mt-2 table-striped dataTable table-responsive" style="width: 100%">
                             <thead>
                             <tr>
                                 <th>Date de début</th>
@@ -232,7 +232,7 @@
                     @endif
                     @if(\Illuminate\Support\Facades\Auth::user()->hasRole(['admin']))
                         <div id="table_fournisseurs" class="tab-pane fade contentHome mt-3" role="tabpanel">
-                        <table id="DataTable_fournisseur" class="table table-bordered table-hover table-secondary mt-2 table-striped dataTable table-responsive" style="width: 100%">
+                        <table id="DataTable_fournisseur" class="table  table-hover table-secondary mt-2 table-striped dataTable table-responsive" style="width: 100%">
                             <thead>
                             <tr>
                                 <th>Nom</th>
@@ -250,7 +250,7 @@
                         </table>
                     </div>
                         <div id="table_users" class="tab-pane fade contentHome mt-3" role="tabpanel">
-                        <table id="DataTable_users" class="table table-bordered table-hover table-secondary mt-2 table-striped dataTable table-responsive" style="width: 100%">
+                        <table id="DataTable_users" class="table  table-hover table-secondary mt-2 table-striped dataTable table-responsive" style="width: 100%">
                             <thead>
                             <tr>
                                 <th>Nom</th>
@@ -272,7 +272,7 @@
                     @endif
                     @if(\Illuminate\Support\Facades\Auth::user()->hasRole(['admin', 'chef agence']))
                         <div id="table_agences" class="tab-pane fade contentHome mt-3" role="tabpanel">
-                            <table id="DataTable_agence" class="table table-bordered table-hover table-secondary mt-2 table-striped dataTable table-responsive" style="width: 100%">
+                            <table id="DataTable_agence" class="table  table-hover table-secondary mt-2 table-striped dataTable table-responsive" style="width: 100%">
                                 <thead>
                                 <tr>
                                     <th>Ville</th>

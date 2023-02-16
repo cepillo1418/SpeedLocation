@@ -2,13 +2,14 @@
 
 @section('content')
         <div class="container-fluid py-4">
-            <!-- Button trigger modal -->
-            <a href="/location/create" class="btn btn-primary float-end">
-                Ajouter une location
-            </a>
+            
             <div class="container">
                 <h2>Page location</h2>
-                <table id="DataTable_location" class="table table-dark mt-2 table-hover table-striped dataTable table-responsive" style="width: 100%">
+                <!-- Button trigger modal -->
+            <a href="/location/create" class="btn btn-outline-primary float-start">
+                Ajouter une location
+            </a>
+                <table id="DataTable_location" class="table table-secondary mt-2 table-hover table-striped dataTable table-responsive" style="width: 100%">
                     <thead class="border-1 border-bottom border-white">
                     <tr>
                         <th>Date de début</th>

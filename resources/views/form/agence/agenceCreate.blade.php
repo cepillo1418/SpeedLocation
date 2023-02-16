@@ -76,10 +76,10 @@
                                             session()->put('urlP', '/agences');
                                         @endphp
                                     @endif
-                                    <a href="{{str_replace(url('/'), '', session()->get('urlP'))}}" class="btn btn-danger">
+                                    <a href="{{str_replace(url('/'), '', session()->get('urlP'))}}" class="btn btn-outline-danger">
                                         {{__('Retour')}}
                                     </a>
-                                    <button type="submit" class="btn btn-primary">
+                                    <button type="submit" class="btn btn-outline-primary">
                                         {{ __('Continuer') }}
                                     </button>
                                 </div>

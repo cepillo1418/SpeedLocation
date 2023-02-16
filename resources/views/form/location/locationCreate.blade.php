@@ -57,7 +57,7 @@
                                             <option class="option-voiture" value="">Selectioner une voiture</option>
                                             <option class="option-voiture" value="vide">Aucune voiture</option>
                                             @foreach($voitures as $datas)
-                                                @if($datas->id === $location->id_voiture)
+                                                @if($datas->id === $location ->id_voiture)
                                                     <option class="option-voiture" value="{{$datas->id}}" selected>{{$datas->marque.' '.$datas->model.' '.$datas->immatriculation}}</option>
                                                 @else
                                                     <option class="option-voiture" value="{{$datas->id}}">{{$datas->marque.' '.$datas->model.' '.$datas->immatriculation}}</option>

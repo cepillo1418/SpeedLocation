@@ -9,7 +9,7 @@
         <a href="/entretien/create" class="btn btn-outline-primary float-start">
             Ajouter Entretien
         </a>
-            <table id="DataTable_entretiens" class="table table-secondary table-bordered mt-2 table-hover table-striped dataTable table-responsive" style="width: 100%">
+            <table id="DataTable_entretiens" class="table table-secondary  mt-2 table-hover table-striped dataTable table-responsive" style="width: 100%">
                 <thead class="border-1 border-bottom border-white">
                 <tr>
                     <th>Nom garage</th>
