@@ -14,10 +14,10 @@
                     <div class="col-12 col-lg-6 px-2 ms-0 ms-lg-2 mt-5 mt-lg-2 border-3 border-opacity-25 border-dark" style="border-left: solid">
                         <h2 class="text-primary text-center text-lg-start v-title mx-2">Immatriculation : <span class="text-white" id="immatriculation">{{$datas->immatriculation}}</span></h2>
                         <div class="d-flex mt-3">
-                            <p class="mx-2 mb-2 text-center"><i class="fa-solid fa-wrench fa-xl text-info"></i> <span id="nbEnt"> {{$nbEnt}} </span> entretiens</p>
-                            <p class="mx-2 mb-2 text-center"><i class="fa-solid fa-gear fa-xl text-info"></i> <span id="nbRep"> {{$nbRep}} </span> reparations</p>
-                            <p class="mx-2 mb-2 text-center"><i class="fa-solid fa-calendar-check fa-xl text-info"></i> <span id="nbAssu"> {{$nbAssu}} </span> assurances</p>
-                            <p class="mx-2 mb-2 text-center"><i class="fa-solid fa-gas-pump fa-xl text-info"></i> <span id="nbCons"> {{$nbCons}} </span> Consommation</p>
+                            <p class="mx-2 mb-2 text-center"><i class="fa-colorg fa-solid fa-wrench fa-xl text-info"></i> <span id="nbEnt"> {{$nbEnt}} </span> entretiens</p>
+                            <p class="mx-2 mb-2 text-center"><i class="fa-colorg fa-solid fa-gear fa-xl text-info"></i> <span id="nbRep"> {{$nbRep}} </span> reparations</p>
+                            <p class="mx-2 mb-2 text-center"><i class="fa-colorg fa-solid fa-calendar-check fa-xl text-info"></i> <span id="nbAssu"> {{$nbAssu}} </span> assurances</p>
+                            <p class="mx-2 mb-2 text-center"><i class="fa-colorg fa-solid fa-gas-pump fa-xl text-info"></i> <span id="nbCons"> {{$nbCons}} </span> Consommation</p>
                         </div>
                         <div class="col-auto mt-2 d-flex flex-wrap justify-content-center justify-content-lg-start">
                             <div class="col-auto mx-2">
@@ -34,7 +34,7 @@
                                 <h2 class="text-primary v-title">Fournisseur : <span class="text-white">{{($datas->name !== null) ? $datas->name.' '.$datas->email : 'Aucun fournisseur'}}</span></h2>
                             </div>
                             <div class="col-auto mx-2 p-0  align-self-center">
-                                <a class="btn btn-info  ms-lg-5 h-fit" href="edit/{{$datas->id}}">modifier</a>
+                                <a class="btn btn-outline-primary ms-lg-5 h-fit" href="edit/{{$datas->id}}">modifier</a>
                             </div>
                         </div>
                     </div>
@@ -62,10 +62,10 @@
                         <div id="table_entretiens" class="tab-pane fade active show " role="tabpanel">
 
                             <!-- Button trigger modal -->
-                            <a href="/entretien/create" class="btn btn-primary float-end my-2">
+                            <a href="/entretien/create" class="btn btn-outline-primary float-end my-2">
                                 Ajouter Entretien
                             </a>
-                            <table id="DataTable_entretiens" class="table table-dark mt-2 table-striped table-hover dataTable dt-responsive" style="width: 100%">
+                            <table id="DataTable_entretiens" class="table table-secondary mt-2 table-striped table-hover dataTable dt-responsive" style="width: 100%">
                                 <thead class="border-1 border-bottom border-white">
                                 <tr>
                                     <th>Nom garage</th>
@@ -90,8 +90,8 @@
                                         </td>
                                         <td class="tdBtn">
                                             <div class="divBtnTab">
-                                                <a class="btn btn-info editButton text-white" href="/entretien/edit/{{$datas->id}}"><i class="fa-solid fa-pencil "></i></a>
-                                                <button class="btn btn-danger delButton" data-voiture="{{{$datas->id}}}" data-db="entretien"><i class="fa-solid fa-trash-can"></i></button>
+                                                <a class="btn btn-outline-primary editButton text-white" href="/entretien/edit/{{$datas->id}}"><i class="fa-solid fa-pencil "></i></a>
+                                                <button class="btn btn-outline-danger delButton" data-voiture="{{{$datas->id}}}" data-db="entretien"><i class="fa-solid fa-trash-can"></i></button>
                                             </div>
                                         </td>
                                     </tr>
@@ -102,10 +102,10 @@
                         </div>
                         <div id="table_reparations" class="tab-pane fade" role="tabpanel">
                             <!-- Button trigger modal -->
-                            <a href="/reparation/create" class="btn btn-primary float-end my-2">
+                            <a href="/reparation/create" class="btn btn-outline-primary float-end my-2">
                                 Ajouter Reparation
                             </a>
-                            <table id="DataTable_reparations" class="table table-dark mt-2 table-hover table-striped dataTable dt-responsive" style="width: 100%">
+                            <table id="DataTable_reparations" class="table table-secondary mt-2 table-hover table-striped dataTable dt-responsive" style="width: 100%">
                                 <thead class="border-1 border-bottom border-white">
                                 <tr>
                                     <th>Nom garage</th>
@@ -130,8 +130,8 @@
                                         </td>
                                         <td class="tdBtn">
                                             <div class="divBtnTab">
-                                                <a class="btn btn-info editButton text-white" href="/reparation/edit/{{$datas->id}}"><i class="fa-solid fa-pencil "></i></a>
-                                                <button class="btn btn-danger delButton" data-voiture="{{$datas->id}}" data-db="reparation"><i class="fa-solid fa-trash-can"></i></button>
+                                                <a class="btn btn-outline-primary editButton text-white" href="/reparation/edit/{{$datas->id}}"><i class="fa-solid fa-pencil "></i></a>
+                                                <button class="btn btn-outline-danger delButton" data-voiture="{{$datas->id}}" data-db="reparation"><i class="fa-solid fa-trash-can"></i></button>
                                             </div>
                                         </td>
                                     </tr>
@@ -141,10 +141,10 @@
                         </div>
                         <div id="table_assurances" class="tab-pane fade " role="tabpanel">
                             <!-- Button trigger modal -->
-                            <a href="/assurance/create" class="btn btn-primary float-end my-2">
+                            <a href="/assurance/create" class="btn btn-outline-primary float-end my-2">
                                 Ajouter assurance
                             </a>
-                            <table id="DataTable_assurances" class="table table-dark mt-2 table-hover table-striped dataTable dt-responsive" style="width: 100%">
+                            <table id="DataTable_assurances" class="table table-secondary mt-2 table-hover table-striped dataTable dt-responsive" style="width: 100%">
                                 <thead class="border-1 border-bottom border-white">
                                 <tr>
                                     <th>Nom assurance</th>
@@ -163,8 +163,8 @@
                                         <td>{{$datas->frais."€"}}</td>
                                         <td class="tdBtn">
                                             <div class="divBtnTab">
-                                                <a class="btn btn-info editButton text-white" href="/assurance/edit/{{$datas->id}}"><i class="fa-solid fa-pencil "></i></a>
-                                                <button class="btn btn-danger delButton" data-voiture="{{$datas->id}}" data-db="assurance"><i class="fa-solid fa-trash-can"></i></button>
+                                                <a class="btn btn-outline-primary editButton text-white" href="/assurance/edit/{{$datas->id}}"><i class="fa-solid fa-pencil "></i></a>
+                                                <button class="btn btn-outline-danger delButton" data-voiture="{{$datas->id}}" data-db="assurance"><i class="fa-solid fa-trash-can"></i></button>
                                             </div>
                                         </td>
                                     </tr>
@@ -174,10 +174,10 @@
                         </div>
                         <div id="table_carburants" class="tab-pane fade" role="tabpanel">
                             <!-- Button trigger modal -->
-                            <a class="btn btn-primary float-end my-2" href="/consommation/create">
+                            <a class="btn btn-outline-primary float-end my-2" href="/consommation/create">
                                 Ajouter Consommation
                             </a>
-                            <table id="DataTable_carburants" class="table table-dark mt-2 table-hover  table-striped dataTable dt-responsive" style="width: 100%">
+                            <table id="DataTable_carburants" class="table table-secondary mt-2 table-hover  table-striped dataTable dt-responsive" style="width: 100%">
                                 <thead class="border-1 border-bottom border-white">
                                 <tr>
                                     <th>Nombre de litre</th>
@@ -194,8 +194,8 @@
                                         <td>{{round($datas->montant/$datas->litre,3).'€'}}</td>
                                         <td class="tdBtn">
                                             <div class="divBtnTab">
-                                                <a class="btn btn-info editButton text-white" href="/consommation/edit/{{$datas->id}}"><i class="fa-solid fa-pencil "></i></a>
-                                                <button class="btn btn-danger delButton" data-db="consommation" data-voiture="{{$datas->id}}"><i class="fa-solid fa-trash-can"></i></button>
+                                                <a class="btn btn-outline-primary editButton text-white" href="/consommation/edit/{{$datas->id}}"><i class="fa-solid fa-pencil "></i></a>
+                                                <button class="btn btn-outline-danger delButton" data-db="consommation" data-voiture="{{$datas->id}}"><i class="fa-solid fa-trash-can"></i></button>
                                             </div>
                                         </td>
                                     </tr>

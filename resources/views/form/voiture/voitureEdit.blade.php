@@ -16,7 +16,7 @@
                             @csrf
                             <input type="hidden" name="_method" value="PUT">
                             <div class="row mb-3">
-                                <label for="type" class="col-md-4 col-form-label text-md-end">{{ __('Type de voiture :') }}</label>
+                                <label for="type" class="col-md-4 col-form-label text-md-end text color-text-gen">{{ __('Type de voiture :') }}</label>
                                 <div class="col-md-6">
                                     <input id="type" type="text" placeholder="{{$voiture->type}}" class="form-control @error('type') is-invalid @enderror" name="type" value="{{ old('type') }}" autocomplete="type" autofocus>
                                     @error ('type')
@@ -27,7 +27,7 @@
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label for="nbPlace" class="col-md-4 col-form-label text-md-end">{{ __('Nombre de siège :') }}</label>
+                                <label for="nbPlace" class="col-md-4 col-form-label text-md-end text color-text-gen">{{ __('Nombre de siège :') }}</label>
                                 <div class="col-md-6">
                                     <input id="nbPlace" type="text" placeholder="{{$voiture->nbPlace}}" class="form-control @error('nbPlace') is-invalid @enderror" name="nbPlace" value="{{ old('nbPlace') }}" autocomplete="nbPlace" autofocus>
                                     @error ('nbPlace')
@@ -38,7 +38,7 @@
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label for="nbPorte" class="col-md-4 col-form-label text-md-end">{{ __('Nombre de porte :') }}</label>
+                                <label for="nbPorte" class="col-md-4 col-form-label text-md-end text color-text-gen">{{ __('Nombre de porte :') }}</label>
                                 <div class="col-md-6">
                                     <input id="nbPorte" type="text" placeholder="{{$voiture->nbPorte}}" class="form-control @error('nbPorte') is-invalid @enderror" name="nbPorte" value="{{ old('nbPorte') }}" autocomplete="nbPorte" autofocus>
                                     @error ('nbPorte')
@@ -49,7 +49,7 @@
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label for="prix" class="col-md-4 col-form-label text-md-end">{{ __('Prix par jour :') }}</label>
+                                <label for="prix" class="col-md-4 col-form-label text-md-end text color-text-gen">{{ __('Prix par jour :') }}</label>
                                 <div class="col-md-6">
                                     <input id="prix" type="text" placeholder="{{$voiture->prix}}" class="form-control @error('prix') is-invalid @enderror" name="prix" value="{{ old('prix') }}" autofocus>
                                     @error ('prix')
@@ -60,7 +60,7 @@
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label for="marque" class="col-md-4 col-form-label text-md-end">{{ __('Marque :') }}</label>
+                                <label for="marque" class="col-md-4 col-form-label text-md-end text color-text-gen">{{ __('Marque :') }}</label>
                                 <div class="col-md-6">
                                     <input id="marque" type="text" placeholder="{{$voiture->marque}}" class="form-control @error('marque') is-invalid @enderror" name="marque" value="{{ old('marque') }}" autocomplete="marque" autofocus>
                                     @error ('marque')
@@ -71,7 +71,7 @@
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label for="model" class="col-md-4 col-form-label text-md-end">{{ __('Model :') }}</label>
+                                <label for="model" class="col-md-4 col-form-label text-md-end text color-text-gen">{{ __('Model :') }}</label>
                                 <div class="col-md-6">
                                     <input id="model" type="text" placeholder="{{$voiture->model}}" class="form-control @error('model') is-invalid @enderror" name="model" value="{{ old('model') }}" autocomplete="model" autofocus>
                                     @error ('model')
@@ -82,7 +82,7 @@
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label for="carburant" class="col-md-4 col-form-label text-md-end">{{ __('Type de carburant :') }}</label>
+                                <label for="carburant" class="col-md-4 col-form-label text-md-end text color-text-gen">{{ __('Type de carburant :') }}</label>
                                 <div class="col-md-6">
                                     <input id="carburant" type="text" placeholder="{{$voiture->carburant}}" class="form-control @error('carburant') is-invalid @enderror" name="carburant" value="{{ old('carburant') }}" autocomplete="carburant" autofocus>
                                     @error ('carburant')
@@ -93,7 +93,7 @@
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label for="circulation" class="col-md-4 col-form-label text-md-end">{{ __('Date de circulation :') }}</label>
+                                <label for="circulation" class="col-md-4 col-form-label text-md-end text color-text-gen">{{ __('Date de circulation :') }}</label>
                                 <div class="col-md-6">
                                     <input id="circulation" type="date" placeholder="{{$voiture->circulation}}" class="form-control @error('circulation') is-invalid @enderror" name="circulation" value="{{ old('circulation') }}" autocomplete="circulation" autofocus>
                                     @error ('circulation')
@@ -104,7 +104,7 @@
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label for="immatriculation" class="col-md-4 col-form-label text-md-end">{{ __('Immatriculation :') }}</label>
+                                <label for="immatriculation" class="col-md-4 col-form-label text-md-end text color-text-gen">{{ __('Immatriculation :') }}</label>
                                 <div class="col-md-6">
                                     <input id="immatriculation" type="text" onkeyup="this.value = this.value.toUpperCase();" placeholder="{{$voiture->immatriculation}}" class="form-control @error('immatriculation') is-invalid @enderror" name="immatriculation" value="{{ old('immatriculation') }}" autocomplete="immatriculation" autofocus>
                                     @error ('immatriculation')
@@ -115,7 +115,7 @@
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label for="puissance" class="col-md-4 col-form-label text-md-end">{{ __('Puissance :') }}</label>
+                                <label for="puissance" class="col-md-4 col-form-label text-md-end text color-text-gen">{{ __('Puissance :') }}</label>
                                 <div class="col-md-6">
                                     <input id="puissance" type="text" placeholder="{{$voiture->puissance}}" class="form-control @error('puissance') is-invalid @enderror" name="puissance" value="{{ old('puissance') }}" autocomplete="puissance" autofocus>
                                     @error ('puissance')
@@ -126,7 +126,7 @@
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label for="statut" class="col-md-4 col-form-label text-md-end">{{ __('Statut du véhicule :') }}</label>
+                                <label for="statut" class="col-md-4 col-form-label text-md-end text color-text-gen">{{ __('Statut du véhicule :') }}</label>
                                 <div class="col-md-6">
                                     <select id="statut" class="form-select @error('statut') is-invalid @enderror" aria-label="Default select example" name="statut">
                                         <option value="1" @if($voiture->statut === 1) selected @endif>Disponible</option>
@@ -140,7 +140,7 @@
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label for="agenceId" class="col-md-4 col-form-label text-md-end">{{ __('Agence :') }}</label>
+                                <label for="agenceId" class="col-md-4 col-form-label text-md-end text color-text-gen">{{ __('Agence :') }}</label>
                                 <div class="col-md-6">
                                     <select id="agenceId" class="form-select @error('id_agence') is-invalid @enderror" aria-label="Default select example" name="id_agence">
                                         <option value="">Selectionner une agence</option>
@@ -161,7 +161,7 @@
                                 </div>
                             </div>
                             <div class="row mb-3">
-                                <label for="image" class="col-md-4 col-form-label text-md-end">{{ __('Image :') }}</label>
+                                <label for="image" class="col-md-4 col-form-label text-md-end text color-text-gen">{{ __('Image :') }}</label>
                                 <div class="col-md-6">
                                     <input id="image" type="file" accept="image/png, image/jpeg, image/jpg" class="form-control @error('image') is-invalid @enderror" name="image" value="{{ old('image') }}" autocomplete="image" autofocus>
                                     @error ('image')
@@ -183,10 +183,10 @@
                                         @endphp
                                     @endif
 
-                                    <a href="{{str_replace(url('/'), '', session()->get('urlP'))}}" class="btn btn-danger">
+                                    <a href="{{str_replace(url('/'), '', session()->get('urlP'))}}" class="btn btn-outline-danger">
                                         Retour
                                     </a>
-                                    <button type="submit" class="btn btn-primary">
+                                    <button type="submit" class="btn btn-outline-primary">
                                         {{ __('Continuer') }}
                                     </button>
                                 </div>
