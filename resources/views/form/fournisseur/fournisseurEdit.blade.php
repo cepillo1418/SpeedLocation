@@ -31,9 +31,9 @@
                                 @if(count(json_decode($users)) > 0)
                                 <div class="col-md-6">
                                     <select id="userId" class="form-select @error('id_users') is-invalid @enderror" aria-label="Default select example" name="id_users">
-                                        <option value="">Selectionner un fournisseur</option>
+                                        <option class="option-voiture" value="">Selectionner un fournisseur</option>
                                         @foreach($users as $datas)
-                                            <option value="{{$datas->id}}">{{$datas->first_name.' '.$datas->last_name.' '.$datas->email}}</option>
+                                            <option class="option-voiture" value="{{$datas->id}}">{{$datas->first_name.' '.$datas->last_name.' '.$datas->email}}</option>
                                         @endforeach
                                     </select>
                                     @error ('id_users')

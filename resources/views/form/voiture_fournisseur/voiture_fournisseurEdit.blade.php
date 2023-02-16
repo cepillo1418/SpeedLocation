@@ -98,9 +98,9 @@
                                 <label for="statut" class="col-md-4 col-form-label text-md-end">{{ __('Statut du véhicule :') }}</label>
                                 <div class="col-md-6">
                                     <select id="statut" class="form-select @error('statut') is-invalid @enderror" aria-label="Default select example" name="statut">
-                                        <option value="">Selectionner un statut</option>
-                                        <option value="1">Disponible</option>
-                                        <option value="0">Indisponible</option>
+                                        <option class="option-voiture"  value="">Selectionner un statut</option>
+                                        <option class="option-voiture"  value="1">Disponible</option>
+                                        <option class="option-voiture"  value="0">Indisponible</option>
                                     </select>
                                     @error ('statut')
                                     <span class="invalid-feedback" role="alert">
@@ -156,11 +156,11 @@
                                         @endphp
                                     @endif
 
-                                    <a href="{{str_replace(url('/'), '', session()->get('urlP'))}}" class="btn btn-danger">
+                                    <a href="{{str_replace(url('/'), '', session()->get('urlP'))}}" class="btn btn-outline-danger">
                                         Retour
                                     </a>
                                     @if(count(json_decode($fournisseurs)) > 0)
-                                        <button type="submit" class="btn btn-primary">
+                                        <button type="submit" class="btn btn-outline-primary">
                                             {{ __('Continuer') }}
                                         </button>
                                     @endif

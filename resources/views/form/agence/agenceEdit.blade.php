@@ -52,9 +52,9 @@
                                 <label for="userID" class="col-md-4 col-form-label text-md-end">{{ __('utilisateurs :') }}</label>
                                 <div class="col-md-6">
                                     <select id="userID" class="form-select @error('id_user') is-invalid @enderror" aria-label="Default select example" name="id_user">
-                                        <option value="">Aucun utilisateur</option>
+                                        <option class="option-voiture" value="">Aucun utilisateur</option>
                                         @foreach($users as $datas)
-                                            <option value="{{$datas->id}}">{{$datas->name.' '.$datas->email}}</option>
+                                            <option class="option-voiture" value="{{$datas->id}}">{{$datas->name.' '.$datas->email}}</option>
                                         @endforeach
                                     </select>
                                     @error ('id_user')

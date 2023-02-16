@@ -19,8 +19,8 @@
                                 <label for="statut" class="col-md-4 col-form-label text-md-end">{{ __('Statut du véhicule :') }}</label>
                                 <div class="col-md-6">
                                     <select id="statut" class="form-select @error('statut') is-invalid @enderror" aria-label="Default select example" name="statut">
-                                        <option value="1" @if($voiture->statut === 1) selected @endif>Disponible</option>
-                                        <option value="0" @if($voiture->statut === 0) selected @endif>Indisponible</option>
+                                        <option class="option-voiture" value="1" @if($voiture->statut === 1) selected @endif>Disponible</option>
+                                        <option class="option-voiture" value="0" @if($voiture->statut === 0) selected @endif>Indisponible</option>
                                     </select>
                                     @error ('statut')
                                     <span class="invalid-feedback" role="alert">

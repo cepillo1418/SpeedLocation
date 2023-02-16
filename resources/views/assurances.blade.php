@@ -2,13 +2,15 @@
 
 @section('content')
     <div class="container-fluid py-4">
-        <!-- Button trigger modal -->
-        <a href="/assurance/create" class="btn btn-primary float-end">
-            Ajouter une assurance
-        </a>
+       
         <div class="container">
             <h2>Page assurances</h2>
-            <table id="DataTable_assurances" class="table table-dark mt-2 table-hover table-striped dataTable table-responsive" style="width: 100%">
+             <!-- Button trigger modal -->
+        <a href="/assurance/create" class="btn btn-outline-primary float-start">
+            Ajouter une assurance
+        </a>
+            <table id="DataTable_assurances" class="table table-secondary mt-2 table-hover table-striped dataTable table-responsive" style="width: 100%">
+            
                 <thead class="border-1 border-bottom border-white">
                 <tr>
                     <th>Nom assurance</th>
@@ -30,8 +32,8 @@
                         <td>{{$datas->frais.'€'}}</td>
                         <td class="tdBtn">
                             <div class="divBtnTab d-flex flex-column flex-md-row">
-                                <a class="btn btn-info editButton text-white" href="/assurance/edit/{{$datas->id}}"><i class="fa-solid fa-pencil "></i></a>
-                                <button class="btn btn-danger delButton" data-voiture="{{$datas->id}}"><i class="fa-solid fa-trash-can"></i></button>
+                                <a class="btn btn-outline-primary editButton text-white" href="/assurance/edit/{{$datas->id}}"><i class="fa-solid fa-pencil "></i></a>
+                                <button class="btn btn-outline-danger delButton" data-voiture="{{$datas->id}}"><i class="fa-solid fa-trash-can"></i></button>
                             </div>
                         </td>
                     </tr>

@@ -2,7 +2,7 @@
 @section('content')
         <div class="container-fluid py-4">
             <!-- Button trigger modal -->
-            <a type="button" class="btn btn-outline-primary float-end "  href="voiture/create">
+            <a type="button" class="btn btn-outline-primary float-start "  href="voiture/create">
                 Ajouter une voiture
             </a>
             <div class="col-9 d-flex flex-wrap pt-5 justify-content-center mx-auto containerVoiture">

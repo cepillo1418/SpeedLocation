@@ -63,13 +63,13 @@
                                 <label for="voitureID" class="col-md-4 col-form-label text-md-end">{{ __('Voiture :') }}</label>
                                 <div class="col-md-6">
                                     <select id="voitureId" class="form-select @error('id_voiture') is-invalid @enderror" aria-label="Default select example" name="id_voiture">
-                                        <option value="">Selectionner une voiture</option>
-                                        <option value="vide">Aucune voiture</option>
+                                        <option class="option-voiture" value="">Selectionner une voiture</option>
+                                        <option class="option-voiture" value="vide">Aucune voiture</option>
                                         @foreach($voitures as $datas)
                                             @if($reparation->id_voiture === $datas->id)
-                                                <option value="{{$datas->id}}" selected>{{$datas->marque.' '.$datas->model.' '.$datas->immatriculation}}</option>
+                                                <option class="option-voiture" value="{{$datas->id}}" selected>{{$datas->marque.' '.$datas->model.' '.$datas->immatriculation}}</option>
                                             @else
-                                                <option value="{{$datas->id}}">{{$datas->marque.' '.$datas->model.' '.$datas->immatriculation}}</option>
+                                                <option class="option-voiture" value="{{$datas->id}}">{{$datas->marque.' '.$datas->model.' '.$datas->immatriculation}}</option>
                                             @endif
                                         @endforeach
                                     </select>
@@ -102,10 +102,10 @@
                                             session()->put('urlP', '/reparations');
                                         @endphp
                                     @endif
-                                    <a href="{{str_replace(url('/'), '', session()->get('urlP'))}}" class="btn btn-danger">
+                                    <a href="{{str_replace(url('/'), '', session()->get('urlP'))}}" class="btn btn-outline-danger">
                                         {{__('Retour')}}
                                     </a>
-                                    <button type="submit" class="btn btn-primary">
+                                    <button type="submit" class="btn btn-outline-primary">
                                         {{ __('Continuer') }}
                                     </button>
                                 </div>

@@ -2,7 +2,7 @@
 @section('content')
     <div class="container-fluid py-4">
         <!-- Button trigger modal -->
-        <a type="button" class="btn btn-primary float-end"  href="voiture-fournisseur/create">
+        <a type="button" class="btn btn-outline-primary float-start"  href="voiture-fournisseur/create">
             Ajouter une voiture
         </a>
         <div class="col-9 d-flex flex-wrap pt-5 justify-content-center mx-auto containerVoiture">
@@ -15,10 +15,10 @@
                     <p class="text-center m-0">Carburant : {{$data->carburant}}</p>
                     <p class="text-center m-0">Statut : {{($data->statut == 1 ) ? 'Disponible' : 'Indisponible'}}</p>
                     <p class="text-center m-0">Fournisseur : {{$data->name}}</p>
-                    <a  class="btn btn-primary w-75 align-self-center mt-3 btn-info-car" href="voiture-fournisseur/edit/{{$data->id}}">
+                    <a  class="btn btn-outline-primary w-75 align-self-center mt-3 btn-info-car text-white" href="voiture-fournisseur/edit/{{$data->id}}">
                         modifier
                     </a>
-                    <button class="btn btn-danger delButton w-75 mt-2 align-self-center" data-voiture="{{$data->id}}">Supprimer</button>
+                    <button class="btn btn-outline-danger delButton w-75 mt-2 align-self-center" data-voiture="{{$data->id}}">Supprimer</button>
                 </div>
             @endforeach
         </div>

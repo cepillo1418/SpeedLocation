@@ -142,9 +142,9 @@
                                 <label for="agenceId" class="col-md-4 col-form-label text-md-end color-text-gen">{{ __('Agence :') }}</label>
                                 <div class="col-md-6">
                                     <select id="agenceId" class="form-select @error('id_agence') is-invalid @enderror" aria-label="Default select example" name="id_agence">
-                                        <option value="null">Aucune agence</option>
+                                        <option class="option-voiture" value="null">Aucune agence</option>
                                         @foreach($agences as $datas)
-                                            <option value="{{$datas->id}}">{{$datas->rue.' '.$datas->ville.' '.$datas->codePostal}}</option>
+                                            <option class="option-voiture" value="{{$datas->id}}">{{$datas->rue.' '.$datas->ville.' '.$datas->codePostal}}</option>
                                         @endforeach
                                     </select>
                                     @error ('id_agence')

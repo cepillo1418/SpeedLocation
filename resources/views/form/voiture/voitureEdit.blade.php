@@ -129,8 +129,8 @@
                                 <label for="statut" class="col-md-4 col-form-label text-md-end text color-text-gen">{{ __('Statut du véhicule :') }}</label>
                                 <div class="col-md-6">
                                     <select id="statut" class="form-select @error('statut') is-invalid @enderror" aria-label="Default select example" name="statut">
-                                        <option value="1" @if($voiture->statut === 1) selected @endif>Disponible</option>
-                                        <option value="0" @if($voiture->statut === 0) selected @endif>Indisponible</option>
+                                        <option class="option-voiture" value="1" @if($voiture->statut === 1) selected @endif>Disponible</option>
+                                        <option class="option-voiture" value="0" @if($voiture->statut === 0) selected @endif>Indisponible</option>
                                     </select>
                                     @error ('statut')
                                     <span class="invalid-feedback" role="alert">
@@ -143,13 +143,13 @@
                                 <label for="agenceId" class="col-md-4 col-form-label text-md-end text color-text-gen">{{ __('Agence :') }}</label>
                                 <div class="col-md-6">
                                     <select id="agenceId" class="form-select @error('id_agence') is-invalid @enderror" aria-label="Default select example" name="id_agence">
-                                        <option value="">Selectionner une agence</option>
-                                        <option value="vide">Aucune agence</option>
+                                        <option class="option-voiture" value="">Selectionner une agence</option>
+                                        <option class="option-voiture" value="vide">Aucune agence</option>
                                         @foreach($agences as $datas)
                                             @if($voiture->id_agence === $datas->id)
-                                                <option value="{{$datas->id}}" selected>{{$datas->rue.' '.$datas->ville.' '.$datas->codePostal}}</option>
+                                                <option class="option-voiture" value="{{$datas->id}}" selected>{{$datas->rue.' '.$datas->ville.' '.$datas->codePostal}}</option>
                                             @else
-                                                <option value="{{$datas->id}}">{{$datas->rue.' '.$datas->ville.' '.$datas->codePostal}}</option>
+                                                <option class="option-voiture" value="{{$datas->id}}">{{$datas->rue.' '.$datas->ville.' '.$datas->codePostal}}</option>
                                             @endif
                                         @endforeach
                                     </select>

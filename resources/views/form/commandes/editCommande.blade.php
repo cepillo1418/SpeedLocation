@@ -42,9 +42,9 @@
                                     <label for="voitureID" class="col-md-4 col-form-label text-md-end">{{ __('Voiture : ( '.$commande->marque.' '.$commande->model.' )') }}</label>
                                     <div class="col-md-6">
                                         <select id="voitureId" class="form-select @error('id_voiture') is-invalid @enderror" aria-label="Default select example" name="id_voiture">
-                                            <option value="">Aucune voiture</option>
+                                            <option class="option-voiture" value="">Aucune voiture</option>
                                             @foreach($voitures as $datas)
-                                                <option value="{{$datas->id}}">{{$datas->marque.' '.$datas->model.' '.$datas->immatriculation}}</option>
+                                                <option class="option-voiture" value="{{$datas->id}}">{{$datas->marque.' '.$datas->model.' '.$datas->immatriculation}}</option>
                                             @endforeach
                                         </select>
                                         @error ('id_voiture')

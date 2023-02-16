@@ -191,8 +191,8 @@
                         </button>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-                        <button type="button" class="btn btn-primary" id="btnDelModal">Supprimer</button>
+                        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Annuler</button>
+                        <button type="button" class="btn btn-outline-primary text-white" id="btnDelModal">Supprimer</button>
                     </div>
                 </div>
             </div>

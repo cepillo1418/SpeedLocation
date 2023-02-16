@@ -63,7 +63,7 @@
                                 <div class="col-md-6">
                                     <select id="type" class="form-select @error('type') is-invalid @enderror" aria-label="Default select example" name="type">
                                         @foreach($roles as $role)
-                                            <option value="{{$role->name}}" class="text-capitalize">{{$role->name}}</option>
+                                            <option class="option-voiture"  value="{{$role->name}}" class="text-capitalize">{{$role->name}}</option>
                                         @endforeach
                                     </select>
                                     @error('type')
