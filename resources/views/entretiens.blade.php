@@ -17,7 +17,7 @@
                     <th>Montant</th>
                     <th>Date</th>
                     <th>Immatriculation</th>
-                    <th>Note</th>
+                    <th>Notes</th>
                     <th></th>
                 </tr>
                 </thead>
